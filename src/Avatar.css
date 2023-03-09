@@ -1,0 +1,17 @@
+img{
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: fill;
+    margin-left: -30px;
+}
+
+.oke{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    object-fit: fill;
+    background-color: lightgrey;
+    color: grey;
+    margin-left: -30px;
+}
