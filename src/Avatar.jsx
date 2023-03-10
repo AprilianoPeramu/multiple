@@ -22,7 +22,13 @@ const Avatar = (props) => {
                 </div>
               )
           )}
-          <div className="oke">
+          <div
+            className="oke"
+            style={{
+              width: props.size.width,
+              height: props.size.height,
+            }}
+          >
             <h1>+{props.b - props.data}</h1>
           </div>
         </div>

@@ -67,12 +67,12 @@ function App() {
     if (window.innerWidth >= 1024) {
       setData(6);
       setSize({ width: "100px", height: "100px" });
-    } else if (window.innerWidth >= 425 && window.innerWidth <= 767) {
+    } else if (window.innerWidth >= 320 && window.innerWidth <= 767) {
       setData(2);
       setSize({ width: "90px", height: "90px" });
     } else {
       setData(5);
-      setSize({ width: "50px", height: "50px" });
+      setSize({ width: "90px", height: "90px" });
     }
   }, [screenSize.dynamicWidth]);
 
