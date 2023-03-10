@@ -1,84 +1,25 @@
-.pic{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    border: 5px solid white;
-    object-fit: fill;
-    margin-left: -30px;
+.pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  object-fit: fill;
+  margin-left: -30px;
 }
 
-
-img{
-    width: 100%;
-    height: 100%;
+img {
+  width: 100%;
+  height: 100%;
 }
 
-.oke{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 4px;
-    border: 5px solid white;
-    object-fit: fill;
-    background-color: lightgrey;
-    color: grey;
-    margin-left: -30px;
-}
-
-@media screen and (max-width: 768px) {
-    .pic{
-        width:90px;
-        height:90px;
-        border-radius: 50%;
-        border: 5px solid white;
-        object-fit: fill;
-        margin-left: -30px;
-    }
-    
-    
-    img{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .oke{
-        width:90px;
-        height:90px;
-        border-radius: 50%;
-        margin-bottom: 4px;
-        border: 5px solid white;
-        object-fit: fill;
-        background-color: lightgrey;
-        color: grey;
-        margin-left: -30px;
-    }
-}
-
-@media screen and (max-width: 425px) {
-    .pic{
-        width: 90px;
-        height: 90px;
-        border-radius: 50%;
-        border: 5px solid white;
-        object-fit: fill;
-        margin-left: -30px;
-    }
-    
-    
-    img{
-        width: 100%;
-        height: 100%;
-    }
-    
-    .oke{
-        width:90px;
-        height:90px;
-        border-radius: 50%;
-        margin-bottom: 4px;
-        border: 5px solid white;
-        object-fit: fill;
-        background-color: lightgrey;
-        color: grey;
-        /* margin-left: -30px; */
-    }
+.oke {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 4px;
+  border: 5px solid white;
+  object-fit: fill;
+  background-color: lightgrey;
+  color: grey;
+  margin-left: -30px;
 }
