@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./App.css";
 import Avatar from "./Avatar";
 
@@ -38,35 +38,33 @@ let a = [
   },
 ];
 
-function App() {
+ function App() {
  
-  let [data, setData] = useState(0);
+  const [data, setData] = useState(0);
 
-  const width = window.innerWidth;
+  const width = useRef(window.innerWidth);
+
+  console.log(width);
 
   useEffect(() => {
-    
-    if (width >= 1024 ) {
+    //Should Refresh page so it can be responsive
+    if (window.innerWidth >= 1024 ) {
       
       setData(6);
       
-    } else if (width >= 425 && width <= 767 ) {
+    } else if (window.innerWidth >= 425 && window.innerWidth <= 767 ) {
       setData(2);
       
-    }else{
+    } else {
       setData(5);
     }
 
-  },[width, data]);
+  },[data]);
+
 
   return (
-    <div className="App">
-      {a.map((a, i) => i < data && (
-        <Avatar img={a.img} /> 
-        ))}
-         <div className="oke">
-            <h1>+{a.length - data}</h1>
-         </div>
+    <div className="App"> 
+        <Avatar variant='outline' img={a} data={data} b={a.length} />   
     </div>
   );
 }
