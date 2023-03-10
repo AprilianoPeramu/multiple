@@ -1,39 +1,39 @@
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Avatar from "./Avatar";
 
 let a = [
   {
     id: 1,
-    img: require("./asset/Picture.png"),
+    img: require("./asset/0001.jpg"),
   },
   {
     id: 2,
-    img: require("./asset/Picture.png"),
+    img: require("./asset/0001.jpg"),
   },
   {
     id: 3,
-    img: require("./asset/Picture.png"),
+    img: require("./asset/0001.jpg"),
   },
   {
     id: 4,
-    img: require("./asset/Picture.png"),
+    img: require("./asset/0001.jpg"),
   },
   {
     id: 5,
-    img: require("./asset/Picture.png"),
+    img: require("./asset/0001.jpg"),
   },
   {
     id: 6,
-    img: require("./asset/Picture.png"),
+    img: require("./asset/0001.jpg"),
   },
   {
     id: 7,
-    img: require("./asset/Picture.png"),
+    img: require("./asset/0001.jpg"),
   },
   {
     id: 8,
-    img: require("./asset/Picture.png"),
+    img: require("./asset/0001.jpg"),
   },
 ];
 
