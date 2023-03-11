@@ -1,34 +1,41 @@
 import "./Avatar.css";
 
-const Avatar = ({ data, b, width, height, nama, img }) => {
+const Avatar = (props) => {
+  let time = new Date().toLocaleTimeString();
+  let date = new Date().getUTCHours();
   return (
     <div className="App">
       <div className="container">
         <div className="card">
-          {img.map(
+          <div className="time">
+            <h2>{time}</h2>
+            <h2>GMT +{date} Indonesia</h2>
+          </div>
+          {props.img.map(
             (item, i) =>
-              i < data && (
+              i < props.data && (
                 <div className="defaultClass" key={item.id}>
                   <img
                     style={{
-                      width: width,
-                      height: height,
+                      width: props.size.width,
+                      height: props.size.height,
                     }}
                     className="pic"
                     src={item.img}
-                    alt={nama}
+                    alt={props.nama}
                   />
                 </div>
               )
           )}
+
           <div
             className="oke"
             style={{
-              width: width,
-              height: height,
+              width: props.size.width,
+              height: props.size.height,
             }}
           >
-            <h1>+{b - data}</h1>
+            <h1>+{props.b - props.data}</h1>
           </div>
         </div>
       </div>

@@ -65,21 +65,21 @@ function App() {
   useEffect(() => {
     //Should Refresh page so it can be responsive
     if (window.innerWidth >= 1024) {
-      setData(6);
-      setSize({ width: "100px", height: "100px" });
+      setData(5);
+      setSize({ width: "50px", height: "50px" });
     } else if (window.innerWidth >= 320 && window.innerWidth <= 767) {
       setData(2);
-      setSize({ width: "90px", height: "90px" });
+      setSize({ width: "50px", height: "50px" });
     } else {
-      setData(5);
-      setSize({ width: "90px", height: "90px" });
+      setData(4);
+      setSize({ width: "50px", height: "50px" });
     }
   }, [screenSize.dynamicWidth]);
 
   return (
-    <div className="App">
+    <>
       <Avatar img={a} data={data} b={a.length} size={size} />
-    </div>
+    </>
   );
 }
 
