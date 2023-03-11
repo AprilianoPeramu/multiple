@@ -1,23 +1,22 @@
 import "./Avatar.css";
 
-const Avatar = (props) => {
-  console.log(props.size);
+const Avatar = ({ data, b, width, height, nama, img }) => {
   return (
     <div className="App">
       <div className="container">
         <div className="card">
-          {props.img.map(
+          {img.map(
             (item, i) =>
-              i < props.data && (
+              i < data && (
                 <div className="defaultClass" key={item.id}>
                   <img
                     style={{
-                      width: props.size.width,
-                      height: props.size.height,
+                      width: width,
+                      height: height,
                     }}
                     className="pic"
                     src={item.img}
-                    alt={props.nama}
+                    alt={nama}
                   />
                 </div>
               )
@@ -25,11 +24,11 @@ const Avatar = (props) => {
           <div
             className="oke"
             style={{
-              width: props.size.width,
-              height: props.size.height,
+              width: width,
+              height: height,
             }}
           >
-            <h1>+{props.b - props.data}</h1>
+            <h1>+{b - data}</h1>
           </div>
         </div>
       </div>
